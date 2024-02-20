@@ -1,0 +1,11 @@
+python39.zip
+.
+
+# Uncomment to run site.main() automatically
+#import site
+import site
+
+# BEGIN_BB_CHANGE
+../../../tools
+../../../third_party/python-libs
+# END_BB_CHANGE

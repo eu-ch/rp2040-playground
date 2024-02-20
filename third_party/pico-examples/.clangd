@@ -1,0 +1,4 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - -Ie:/pico/sdk/gcc-arm-none-eabi/arm-none-eabi/include/

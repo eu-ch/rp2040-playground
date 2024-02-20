@@ -1,0 +1,5 @@
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+  - -Isrc/common/pico_audio/include
+  - -Ie:/pico/sdk/pico-sdk/src/common/pico_base/include/

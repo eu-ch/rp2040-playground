@@ -1,0 +1,29 @@
+If:
+  PathMatch: programs/.*
+
+CompileFlags:
+  CompilationDatabase: _intermediate
+  Add:
+    - -I_intermediate/generated/pico_base
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/
+
+---
+
+If:
+  PathMatch: third_party/pico-examples/.*
+CompileFlags:
+  CompilationDatabase: third_party/pico-examples/_intermediate
+  Add:
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/
+
+---
+
+If:
+  PathMatch: third_party/pico-extras/.*
+CompileFlags:
+  CompilationDatabase: third_party/pico-extras/_intermediate
+  Add:
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/c++/10.3.1/
+    - -Ithird_party/pico-dist/gcc-arm-none-eabi/arm-none-eabi/include/

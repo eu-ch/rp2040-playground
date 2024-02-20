@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="raspberry-pi-pico-sdk-examples">Raspberry Pi Pico SDK
+Examples</h1>
+<h2 id="getting-started">Getting started</h2>
+<p>See <a href="https://rptl.io/pico-get-started">Getting Started with
+the Raspberry Pi Pico</a> and the README in the <a
+href="https://github.com/raspberrypi/pico-sdk">pico-sdk</a> for
+information on getting up and running.</p>
+<h3 id="first-examples">First Examples</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+<th>Link to prebuilt UF2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="hello_world/serial">hello_serial</a></td>
+<td>The obligatory Hello World program for Pico (Output over serial
+version)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="hello_world/usb">hello_usb</a></td>
+<td>The obligatory Hello World program for Pico (Output over USB
+version)</td>
+<td>https://rptl.io/pico-hello-usb</td>
+</tr>
+<tr class="odd">
+<td><a href="blink">blink</a></td>
+<td>Blink an LED on and off.</td>
+<td>https://rptl.io/pico-blink</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adc">ADC</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="adc/hello_adc">hello_adc</a></td>
+<td>Display the voltage from an ADC input.</td>
+</tr>
+<tr class="even">
+<td><a href="adc/joystick_display">joystick_display</a></td>
+<td>Display a Joystick X/Y input based on two ADC inputs.</td>
+</tr>
+<tr class="odd">
+<td><a href="adc/adc_console">adc_console</a></td>
+<td>An interactive shell for playing with the ADC. Includes example of
+free-running capture mode.</td>
+</tr>
+<tr class="even">
+<td><a href="adc/onboard_temperature">onboard_temperature</a></td>
+<td>Display the value of the onboard temperature sensor.</td>
+</tr>
+<tr class="odd">
+<td><a href="adc/microphone_adc">microphone_adc</a></td>
+<td>Read analog values from a microphone and plot the measured sound
+amplitude.</td>
+</tr>
+<tr class="even">
+<td><a href="adc/dma_capture">dma_capture</a></td>
+<td>Use the DMA to capture many samples from the ADC.</td>
+</tr>
+<tr class="odd">
+<td><a href="adc/read_vsys">read_vsys</a></td>
+<td>Demonstrates how to read VSYS to get the voltage of the power
+supply.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="clocks">Clocks</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="clocks/hello_48MHz">hello_48MHz</a></td>
+<td>Change the system clock frequency to 48 MHz while running.</td>
+</tr>
+<tr class="even">
+<td><a href="clocks/hello_gpout">hello_gpout</a></td>
+<td>Use the general purpose clock outputs (GPOUT) to drive divisions of
+internal clocks onto GPIO outputs.</td>
+</tr>
+<tr class="odd">
+<td><a href="clocks/hello_resus">hello_resus</a></td>
+<td>Enable the clock resuscitate feature, “accidentally” stop the system
+clock, and show how we recover.</td>
+</tr>
+<tr class="even">
+<td><a href="clocks/detached_clk_peri">detached_clk_peri</a></td>
+<td>Detach peripheral clock and vary system clock.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cmake">CMake</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="cmake/build_variants">build_variants</a></td>
+<td>Builds two version of the same app with different
+configurations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dma">DMA</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="dma/hello_dma">hello_dma</a></td>
+<td>Use the DMA to copy data in memory.</td>
+</tr>
+<tr class="even">
+<td><a href="dma/control_blocks">control_blocks</a></td>
+<td>Build a control block list, to program a longer sequence of DMA
+transfers to the UART.</td>
+</tr>
+<tr class="odd">
+<td><a href="dma/channel_irq">channel_irq</a></td>
+<td>Use an IRQ handler to reconfigure a DMA channel, in order to
+continuously drive data through a PIO state machine.</td>
+</tr>
+<tr class="even">
+<td><a href="dma/sniff_crc">sniff_crc</a></td>
+<td>Use the DMA engine’s ‘sniff’ capability to calculate a CRC32 on a
+data buffer.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flash">Flash</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="flash/cache_perfctr">cache_perfctr</a></td>
+<td>Read and clear the cache performance counters. Show how they are
+affected by different types of flash reads.</td>
+</tr>
+<tr class="even">
+<td><a href="flash/nuke">nuke</a></td>
+<td>Obliterate the contents of flash. An example of a NO_FLASH binary
+(UF2 loaded directly into SRAM and runs in-place there). A useful
+utility to drag and drop onto your Pico if the need arises.</td>
+</tr>
+<tr class="odd">
+<td><a href="flash/program">program</a></td>
+<td>Erase a flash sector, program one flash page, and read back the
+data.</td>
+</tr>
+<tr class="even">
+<td><a href="flash/xip_stream">xip_stream</a></td>
+<td>Stream data using the XIP stream hardware, which allows data to be
+DMA’d in the background whilst executing code from flash.</td>
+</tr>
+<tr class="odd">
+<td><a href="flash/ssi_dma">ssi_dma</a></td>
+<td>DMA directly from the flash interface (continuous SCK clocking) for
+maximum bulk read performance.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gpio">GPIO</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="gpio/hello_7segment">hello_7segment</a></td>
+<td>Use the GPIOs to drive a seven segment LED display.</td>
+</tr>
+<tr class="even">
+<td><a href="gpio/hello_gpio_irq">hello_gpio_irq</a></td>
+<td>Register an interrupt handler to run when a GPIO is toggled.</td>
+</tr>
+<tr class="odd">
+<td><a href="gpio/dht_sensor">dht_sensor</a></td>
+<td>Use GPIO to bitbang the serial protocol for a DHT
+temperature/humidity sensor.</td>
+</tr>
+</tbody>
+</table>
+<p>See also: <a href="blink">blink</a>, blinking an LED attached to a
+GPIO.</p>
+<h3 id="hw-divider">HW divider</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="divider">hello_divider</a></td>
+<td>Show how to directly access the hardware integer dividers, in case
+AEABI injection is disabled.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="i2c">I2C</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="i2c/bus_scan">bus_scan</a></td>
+<td>Scan the I2C bus for devices and display results.</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/bmp280_i2c">bmp280_i2c</a></td>
+<td>Read and convert temperature and pressure data from a BMP280 sensor,
+attached to an I2C bus.</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/lcd_1602_i2c">lcd_1602_i2c</a></td>
+<td>Display some text on a generic 16x2 character LCD display, via
+I2C.</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/lis3dh_i2c">lis3dh_i2c</a></td>
+<td>Read acceleration and temperature value from a LIS3DH sensor via
+I2C</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/mcp9808_i2c">mcp9808_i2c</a></td>
+<td>Read temperature, set limits and raise alerts when limits are
+surpassed.</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/mma8451_i2c">mma8451_i2c</a></td>
+<td>Read acceleration from a MMA8451 accelerometer and set range and
+precision for the data.</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/mpl3115a2_i2c">mpl3115a2_i2c</a></td>
+<td>Interface with an MPL3115A2 altimeter, exploring interrupts and
+advanced board features, via I2C.</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/mpu6050_i2c">mpu6050_i2c</a></td>
+<td>Read acceleration and angular rate values from a MPU6050
+accelerometer/gyro, attached to an I2C bus.</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/ssd1306_i2c">ssd1306_i2c</a></td>
+<td>Convert and display a bitmap on a 128x32 or 128x64 SSD1306-driven
+OLED display</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/pa1010d_i2c">pa1010d_i2c</a></td>
+<td>Read GPS location data, parse and display data via I2C.</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/pcf8523_i2c">pcf8523_i2c</a></td>
+<td>Read time and date values from a real time clock. Set current time
+and alarms on it.</td>
+</tr>
+<tr class="even">
+<td><a href="i2c/ht16k33_i2c">ht16k33_i2c</a></td>
+<td>Drive a 4 digit 14 segment LED with an HT16K33.</td>
+</tr>
+<tr class="odd">
+<td><a href="i2c/slave_mem_i2c">slave_mem_i2c</a></td>
+<td>i2c slave example where the slave implements a 256 byte memory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interpolator">Interpolator</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="interp/hello_interp">hello_interp</a></td>
+<td>A bundle of small examples, showing how to access the core-local
+interpolator hardware, and use most of its features.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multicore">Multicore</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="multicore/hello_multicore">hello_multicore</a></td>
+<td>Launch a function on the second core, printf some messages on each
+core, and pass data back and forth through the mailbox FIFOs.</td>
+</tr>
+<tr class="even">
+<td><a href="multicore/multicore_fifo_irqs">multicore_fifo_irqs</a></td>
+<td>On each core, register and interrupt handler for the mailbox FIFOs.
+Show how the interrupt fires when that core receives a message.</td>
+</tr>
+<tr class="odd">
+<td><a href="multicore/multicore_runner">multicore_runner</a></td>
+<td>Set up the second core to accept, and run, any function pointer
+pushed into its mailbox FIFO. Push in a few pieces of code and get
+answers back.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pico-board">Pico Board</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="picoboard/blinky">blinky</a></td>
+<td>Blink “hello, world” in Morse code on Pico’s LED</td>
+</tr>
+<tr class="even">
+<td><a href="picoboard/button">button</a></td>
+<td>Use Pico’s BOOTSEL button as a regular button input, by temporarily
+suspending flash access.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pico-w-networking">Pico W Networking</h3>
+<p>These examples are for the Pico W, and are only available for
+<code>PICO_BOARD=pico_w</code></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="pico_w/wifi/access_point">picow_access_point</a></td>
+<td>Starts a WiFi access point, and fields DHCP requests.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/blink">picow_blink</a></td>
+<td>Blinks the on-board LED (which is connected via the WiFi chip).</td>
+</tr>
+<tr class="odd">
+<td><a href="pico_w/wifi/iperf">picow_iperf_server</a></td>
+<td>Runs an “iperf” server for WiFi speed testing.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/ntp_client">picow_ntp_client</a></td>
+<td>Connects to an NTP server to fetch and display the current
+time.</td>
+</tr>
+<tr class="odd">
+<td><a href="pico_w/wifi/tcp_client">picow_tcp_client</a></td>
+<td>A simple TCP client. You can run <a
+href="pico_w/wifi/python_test_tcp/python_test_tcp_server.py">python_test_tcp_server.py</a>
+for it to connect to.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/tcp_server">picow_tcp_server</a></td>
+<td>A simple TCP server. You can use <a
+href="pico_w//wifi/python_test_tcp/python_test_tcp_client.py">python_test_tcp_client.py</a>
+to connect to it.</td>
+</tr>
+<tr class="odd">
+<td><a href="pico_w/wifi/tls_client">picow_tls_client</a></td>
+<td>Demonstrates how to make a HTTPS request using TLS.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/tls_client">picow_tls_verify</a></td>
+<td>Demonstrates how to make a HTTPS request using TLS with certificate
+verification.</td>
+</tr>
+<tr class="odd">
+<td><a href="pico_w/wifi/wifi_scan">picow_wifi_scan</a></td>
+<td>Scans for WiFi networks and prints the results.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/udp_beacon">picow_udp_beacon</a></td>
+<td>A simple UDP transmitter.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="freertos-examples">FreeRTOS examples</h4>
+<p>These are examples of integrating Pico W networking under FreeRTOS,
+and require you to set the <code>FREERTOS_KERNEL_PATH</code> to point to
+the FreeRTOS Kernel.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="pico_w/wifi/freertos/iperf">picow_freertos_iperf_server_nosys</a></td>
+<td>Runs an “iperf” server for WiFi speed testing under FreeRTOS in
+NO_SYS=1 mode. The LED is blinked in another task</td>
+</tr>
+<tr class="even">
+<td><a
+href="pico_w/wifi/freertos/iperf">picow_freertos_iperf_server_sys</a></td>
+<td>Runs an “iperf” server for WiFi speed testing under FreeRTOS in
+NO_SYS=0 (i.e. full FreeRTOS integration) mode. The LED is blinked in
+another task</td>
+</tr>
+<tr class="odd">
+<td><a
+href="pico_w/wifi/freertos/ping">picow_freertos_ping_nosys</a></td>
+<td>Runs the lwip-contrib/apps/ping test app under FreeRTOS in NO_SYS=1
+mode.</td>
+</tr>
+<tr class="even">
+<td><a href="pico_w/wifi/freertos/ping">picow_freertos_ping_sys</a></td>
+<td>Runs the lwip-contrib/apps/ping test app under FreeRTOS in NO_SYS=0
+(i.e. full FreeRTOS integration) mode. The test app uses the lwIP
+<em>socket</em> API in this case.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pico-w-bluetooth">Pico W Bluetooth</h3>
+<p>These examples are for the Pico W, and are only available for
+<code>PICO_BOARD=pico_w</code>. They are examples from the Blue Kitchen
+Bluetooth stack, see <a
+href="https://bluekitchen-gmbh.com/btstack/#examples/examples/index.html">here</a>
+for a full description.</p>
+<p>By default, the Bluetooth examples are only built in one “mode” only
+(<em>background</em>, <em>poll</em>, or <em>freertos</em>), with the
+default being <em>background</em>. This can be changed by passing
+<code>-DBTSTACK_EXAMPLE_TYPE=poll</code> etc. to <code>CMake</code>, or
+all examples can be built (which may be slow) by passing
+<code>-DBTSTACK_EXAMPLE_TYPE=all</code> Freertos versions can only be
+built if <code>FREERTOS_KERNEL_PATH</code> is defined.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/a2dp_sink_demo.c">picow_bt_example_a2dp_sink_demo</a></td>
+<td>A2DP Sink - Receive Audio Stream and Control Playback.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/a2dp_source_demo.c">picow_bt_example_a2dp_source_demo</a></td>
+<td>A2DP Source - Stream Audio and Control Volume.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/ancs_client_demo.c">picow_bt_example_ancs_client_demo</a></td>
+<td>LE ANCS Client - Apple Notification Service.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/att_delayed_response.c">picow_bt_example_att_delayed_response</a></td>
+<td>LE Peripheral - Delayed Response.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/audio_duplex.c">picow_bt_example_audio_duplex</a></td>
+<td>Audio Driver - Forward Audio from Source to Sink.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/avrcp_browsing_client.c">picow_bt_example_avrcp_browsing_client</a></td>
+<td>AVRCP Browsing - Browse Media Players and Media Information.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/dut_mode_classic.c">picow_bt_example_dut_mode_classic</a></td>
+<td>Testing - Enable Device Under Test (DUT.c) Mode for Classic.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gap_dedicated_bonding.c">picow_bt_example_gap_dedicated_bonding</a></td>
+<td>GAP bonding</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gap_inquiry.c">picow_bt_example_gap_inquiry</a></td>
+<td>GAP Classic Inquiry.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gap_le_advertisements.c">picow_bt_example_gap_le_advertisements</a></td>
+<td>GAP LE Advertisements Scanner.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gap_link_keys.c">picow_bt_example_gap_link_keys</a></td>
+<td>GAP Link Key Management (Classic.c).</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_battery_query.c">picow_bt_example_gatt_battery_query</a></td>
+<td>GATT Battery Service Client.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_browser.c">picow_bt_example_gatt_browser</a></td>
+<td>GATT Client - Discover Primary Services.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_counter.c">picow_bt_example_gatt_counter</a></td>
+<td>GATT Server - Heartbeat Counter over GATT.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_device_information_query.c">picow_bt_example_gatt_device_information_query</a></td>
+<td>GATT Device Information Service Client.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_heart_rate_client.c">picow_bt_example_gatt_heart_rate_client</a></td>
+<td>GATT Heart Rate Sensor Client.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/gatt_streamer_server.c">picow_bt_example_gatt_streamer_server</a></td>
+<td>Performance - Stream Data over GATT (Server.c).</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hfp_ag_demo.c">picow_bt_example_hfp_ag_demo</a></td>
+<td>HFP AG - Audio Gateway.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hfp_hf_demo.c">picow_bt_example_hfp_hf_demo</a></td>
+<td>HFP HF - Hands-Free.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hid_host_demo.c">picow_bt_example_hid_host_demo</a></td>
+<td>HID Host Classic.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hid_keyboard_demo.c">picow_bt_example_hid_keyboard_demo</a></td>
+<td>HID Keyboard Classic.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hid_mouse_demo.c">picow_bt_example_hid_mouse_demo</a></td>
+<td>HID Mouse Classic.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hog_boot_host_demo.c">picow_bt_example_hog_boot_host_demo</a></td>
+<td>HID Boot Host LE.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hog_host_demo.c">picow_bt_example_hog_host_demo</a></td>
+<td>HID Host LE.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hog_keyboard_demo.c">picow_bt_example_hog_keyboard_demo</a></td>
+<td>HID Keyboard LE.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hog_mouse_demo.c">picow_bt_example_hog_mouse_demo</a></td>
+<td>HID Mouse LE.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hsp_ag_demo.c">picow_bt_example_hsp_ag_demo</a></td>
+<td>HSP AG - Audio Gateway.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/hsp_hs_demo.c">picow_bt_example_hsp_hs_demo</a></td>
+<td>HSP HS - Headset.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/le_credit_based_flow_control_mode_client.c">picow_bt_example_le_credit_based_flow_control_mode_client</a></td>
+<td>LE Credit-Based Flow-Control Mode Client - Send Data over
+L2CAP.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/le_credit_based_flow_control_mode_server.c">picow_bt_example_le_credit_based_flow_control_mode_server</a></td>
+<td>LE Credit-Based Flow-Control Mode Server - Receive data over
+L2CAP.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/led_counter.c">picow_bt_example_led_counter</a></td>
+<td>Hello World - Blinking a LED without Bluetooth.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/le_mitm.c">picow_bt_example_le_mitm</a></td>
+<td>LE Man-in-the-Middle Tool.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/le_streamer_client.c">picow_bt_example_le_streamer_client</a></td>
+<td>Performance - Stream Data over GATT (Client.c).</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/mod_player.c">picow_bt_example_mod_player</a></td>
+<td>Audio Driver - Play 80’s MOD Song.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/nordic_spp_le_counter.c">picow_bt_example_nordic_spp_le_counter</a></td>
+<td>LE Nordic SPP-like Heartbeat Server.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/nordic_spp_le_streamer.c">picow_bt_example_nordic_spp_le_streamer</a></td>
+<td>LE Nordic SPP-like Streamer Server.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/sdp_general_query.c">picow_bt_example_sdp_general_query</a></td>
+<td>SDP Client - Query Remote SDP Records.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/sdp_rfcomm_query.c">picow_bt_example_sdp_rfcomm_query</a></td>
+<td>SDP Client - Query RFCOMM SDP record.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/sine_player.c">picow_bt_example_sine_player</a></td>
+<td>Audio Driver - Play Sine.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/sm_pairing_central.c">picow_bt_example_sm_pairing_central</a></td>
+<td>LE Central - Test Pairing Methods.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/sm_pairing_peripheral.c">picow_bt_example_sm_pairing_peripheral</a></td>
+<td>LE Peripheral - Test Pairing Methods.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_and_gatt_counter.c">picow_bt_example_spp_and_gatt_counter</a></td>
+<td>Dual Mode - SPP and LE Counter.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_and_gatt_streamer.c">picow_bt_example_spp_and_gatt_streamer</a></td>
+<td>Dual Mode - SPP and LE streamer.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_counter.c">picow_bt_example_spp_counter</a></td>
+<td>SPP Server - Heartbeat Counter over RFCOMM.</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_flowcontrol.c">picow_bt_example_spp_flowcontrol</a></td>
+<td>SPP Server - RFCOMM Flow Control.</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_streamer_client.c">picow_bt_example_spp_streamer_client</a></td>
+<td>Performance - Stream Data over SPP (Client.c).</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/bluekitchen/btstack/tree/master/example/spp_streamer.c">picow_bt_example_spp_streamer</a></td>
+<td>Performance - Stream Data over SPP (Server.c).</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/bluekitchen/btstack/blob/master/example/ublox_spp_le_counter.c">picow_bt_example_ublox_spp_le_counter</a></td>
+<td>LE u-blox SPP-like Heartbeat Server.</td>
+</tr>
+</tbody>
+</table>
+<p>Some Standalone Bluetooth examples (without all the common example
+build infrastructure) are also available:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="pico_w/bt/standalone">picow_ble_temp_sensor</a></td>
+<td>Reads from the on board temperature sensor and sends notifications
+via BLE</td>
+</tr>
+<tr class="even">
+<td><a
+href="pico_w/bt/standalone">picow_ble_temp_sensor_with_wifi</a></td>
+<td>Same as above but also connects to Wi-Fi and starts an “iperf”
+server</td>
+</tr>
+<tr class="odd">
+<td><a href="pico_w/bt/standalone">picow_ble_temp_reader</a></td>
+<td>Connects to one of the above “sensors” and reads the
+temperature</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pio">PIO</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="pio/hello_pio">hello_pio</a></td>
+<td>Absolutely minimal example showing how to control an LED by pushing
+values into a PIO FIFO.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/apa102">apa102</a></td>
+<td>Rainbow pattern on on a string of APA102 addressable RGB LEDs.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/clocked_input">clocked_input</a></td>
+<td>Shift in serial data, sampling with an external clock.</td>
+</tr>
+<tr class="even">
+<td><a
+href="pio/differential_manchester">differential_manchester</a></td>
+<td>Send and receive differential Manchester-encoded serial (BMC).</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/hub75">hub75</a></td>
+<td>Display an image on a 128x64 HUB75 RGB LED matrix.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/i2c">i2c</a></td>
+<td>Scan an I2C bus.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/ir_nec">ir_nec</a></td>
+<td>Sending and receiving IR (infra-red) codes using the PIO.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/logic_analyser">logic_analyser</a></td>
+<td>Use PIO and DMA to capture a logic trace of some GPIOs, whilst a PWM
+unit is driving them.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/manchester_encoding">manchester_encoding</a></td>
+<td>Send and receive Manchester-encoded serial.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/onewire">onewire</a></td>
+<td>A library for interfacing to 1-Wire devices, with an example for the
+DS18B20 temperature sensor.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/pio_blink">pio_blink</a></td>
+<td>Set up some PIO state machines to blink LEDs at different
+frequencies, according to delay counts pushed into their FIFOs.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/pwm">pwm</a></td>
+<td>Pulse width modulation on PIO. Use it to gradually fade the
+brightness of an LED.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/spi">spi</a></td>
+<td>Use PIO to erase, program and read an external SPI flash chip. A
+second example runs a loopback test with all four CPHA/CPOL
+combinations.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/squarewave">squarewave</a></td>
+<td>Drive a fast square wave onto a GPIO. This example accesses
+low-level PIO registers directly, instead of using the SDK
+functions.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/st7789_lcd">st7789_lcd</a></td>
+<td>Set up PIO for 62.5 Mbps serial output, and use this to display a
+spinning image on a ST7789 serial LCD.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/quadrature_encoder">quadrature_encoder</a></td>
+<td>A quadrature encoder using PIO to maintain counts independent of the
+CPU.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/uart_rx">uart_rx</a></td>
+<td>Implement the receive component of a UART serial port. Attach it to
+the spare Arm UART to see it receive characters.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/uart_tx">uart_tx</a></td>
+<td>Implement the transmit component of a UART serial port, and print
+hello world.</td>
+</tr>
+<tr class="odd">
+<td><a href="pio/ws2812">ws2812</a></td>
+<td>Examples of driving WS2812 addressable RGB LEDs.</td>
+</tr>
+<tr class="even">
+<td><a href="pio/addition">addition</a></td>
+<td>Add two integers together using PIO. Only around 8 billion times
+slower than Cortex-M0+.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pwm">PWM</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="pwm/hello_pwm">hello_pwm</a></td>
+<td>Minimal example of driving PWM output on GPIOs.</td>
+</tr>
+<tr class="even">
+<td><a href="pwm/led_fade">led_fade</a></td>
+<td>Fade an LED between low and high brightness. An interrupt handler
+updates the PWM slice’s output level each time the counter wraps.</td>
+</tr>
+<tr class="odd">
+<td><a href="pwm/measure_duty_cycle">measure_duty_cycle</a></td>
+<td>Drives a PWM output at a range of duty cycles, and uses another PWM
+slice in input mode to measure the duty cycle.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reset">Reset</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="reset/hello_reset">hello_reset</a></td>
+<td>Perform a hard reset on some peripherals, then bring them back
+up.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rtc">RTC</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="rtc/hello_rtc">hello_rtc</a></td>
+<td>Set a date/time on the RTC, then repeatedly print the current time,
+10 times per second, to show it updating.</td>
+</tr>
+<tr class="even">
+<td><a href="rtc/rtc_alarm">rtc_alarm</a></td>
+<td>Set an alarm on the RTC to trigger an interrupt at a date/time 5
+seconds into the future.</td>
+</tr>
+<tr class="odd">
+<td><a href="rtc/rtc_alarm_repeat">rtc_alarm_repeat</a></td>
+<td>Trigger an RTC interrupt once per minute.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spi">SPI</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="spi/bme280_spi">bme280_spi</a></td>
+<td>Attach a BME280 temperature/humidity/pressure sensor via SPI.</td>
+</tr>
+<tr class="even">
+<td><a href="spi/mpu9250_spi">mpu9250_spi</a></td>
+<td>Attach a MPU9250 accelerometer/gyoscope via SPI.</td>
+</tr>
+<tr class="odd">
+<td><a href="spi/spi_dma">spi_dma</a></td>
+<td>Use DMA to transfer data both to and from the SPI simultaneously.
+The SPI is configured for loopback.</td>
+</tr>
+<tr class="even">
+<td><a href="spi/spi_flash">spi_flash</a></td>
+<td>Erase, program and read a serial flash device attached to one of the
+SPI controllers.</td>
+</tr>
+<tr class="odd">
+<td><a href="spi/spi_master_slave">spi_master_slave</a></td>
+<td>Demonstrate SPI communication as master and slave.</td>
+</tr>
+<tr class="even">
+<td><a href="spi/max7219_8x7seg_spi">max7219_8x7seg_spi</a></td>
+<td>Attaching a Max7219 driving an 8 digit 7 segment display via
+SPI</td>
+</tr>
+<tr class="odd">
+<td><a href="spi/max7219_32x8_spi">max7219_32x8_spi</a></td>
+<td>Attaching a Max7219 driving an 32x8 LED display via SPI</td>
+</tr>
+</tbody>
+</table>
+<h3 id="system">System</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="system/hello_double_tap">hello_double_tap</a></td>
+<td>An LED blink with the <code>pico_bootsel_via_double_reset</code>
+library linked. This enters the USB bootloader when it detects the
+system being reset twice in quick succession, which is useful for boards
+with a reset button but no BOOTSEL button.</td>
+</tr>
+<tr class="even">
+<td><a href="system/narrow_io_write">narrow_io_write</a></td>
+<td>Demonstrate the effects of 8-bit and 16-bit writes on a 32-bit IO
+register.</td>
+</tr>
+<tr class="odd">
+<td><a href="system/unique_board_id">unique_board_id</a></td>
+<td>Read the 64 bit unique ID from external flash, which serves as a
+unique identifier for the board.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="timer">Timer</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="timer/hello_timer">hello_timer</a></td>
+<td>Set callbacks on the system timer, which repeat at regular
+intervals. Cancel the timer when we’re done.</td>
+</tr>
+<tr class="even">
+<td><a href="timer/periodic_sampler">periodic_sampler</a></td>
+<td>Sample GPIOs in a timer callback, and push the samples into a
+concurrency-safe queue. Pop data from the queue in code running in the
+foreground.</td>
+</tr>
+<tr class="odd">
+<td><a href="timer/timer_lowlevel">timer_lowlevel</a></td>
+<td>Example of direct access to the timer hardware. Not generally
+recommended, as the SDK may use the timer for IO timeouts.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uart">UART</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="uart/hello_uart">hello_uart</a></td>
+<td>Print some text from one of the UART serial ports, without going
+through <code>stdio</code>.</td>
+</tr>
+<tr class="even">
+<td><a href="uart/lcd_uart">lcd_uart</a></td>
+<td>Display text and symbols on a 16x02 RGB LCD display via UART</td>
+</tr>
+<tr class="odd">
+<td><a href="uart/uart_advanced">uart_advanced</a></td>
+<td>Use some other UART features like RX interrupts, hardware control
+flow, and data formats other than 8n1.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usb-device">USB Device</h3>
+<h4 id="tinyusb-examples">TinyUSB Examples</h4>
+<p>Most of the USB device examples come directly from the TinyUSB device
+examples directory <a
+href="https://github.com/hathach/tinyusb/tree/master/examples/device">here</a>.
+Those that are supported on RP2040 devices are automatically included as
+part of the pico-examples build as targets named
+<code>tinyusb_dev_&lt;example_name&gt;</code>,
+e.g. https://github.com/hathach/tinyusb/tree/master/examples/device/hid_composite
+is built as <code>tinyusb_dev_hid_composite</code>.</p>
+<p>At the time of writing, these examples are available:</p>
+<ul>
+<li>tinyusb_dev_audio_4_channel_mic</li>
+<li>tinyusb_dev_audio_test</li>
+<li>tinyusb_dev_board_test</li>
+<li>tinyusb_dev_cdc_dual_ports</li>
+<li>tinyusb_dev_cdc_msc</li>
+<li>tinyusb_dev_dfu</li>
+<li>tinyusb_dev_dfu_runtime</li>
+<li>tinyusb_dev_dynamic_configuration</li>
+<li>tinyusb_dev_hid_composite</li>
+<li>tinyusb_dev_hid_generic_inout</li>
+<li>tinyusb_dev_hid_multiple_interface</li>
+<li>tinyusb_dev_midi_test</li>
+<li>tinyusb_dev_msc_dual_lun</li>
+<li>tinyusb_dev_net_lwip_webserver</li>
+<li>tinyusb_dev_uac2_headset</li>
+<li>tinyusb_dev_usbtmc</li>
+<li>tinyusb_dev_video_capture</li>
+<li>tinyusb_dev_webusb_serial</li>
+</ul>
+<p>Whilst these examples ably demonstrate how to use TinyUSB in device
+mode, their <code>CMakeLists.txt</code> is set up in a way tailored to
+how TinyUSB builds their examples within their source tree.</p>
+<p>For a better example of how to configure <code>CMakeLists.txt</code>
+for using TinyUSB in device mode with the Raspberry Pi SDK see
+below:</p>
+<h4 id="sdk-build-example">SDK build example</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="usb/device/dev_hid_composite">dev_hid_composite</a></td>
+<td>A copy of the TinyUSB device example with the same name, but with a
+CMakeLists.txt which demonstrates how to add a dependency on the TinyUSB
+device libraries with the Raspberry Pi Pico SDK</td>
+</tr>
+</tbody>
+</table>
+<h4 id="low-level-example">Low Level example</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="usb/device/dev_lowlevel">dev_lowlevel</a></td>
+<td>A USB Bulk loopback implemented with direct access to the USB
+hardware (no TinyUSB)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="usb-host">USB Host</h3>
+<p>All the USB host examples come directly from the TinyUSB host
+examples directory <a
+href="https://github.com/hathach/tinyusb/tree/master/examples/host">here</a>.
+Those that are supported on RP2040 devices are automatically included as
+part of the pico-examples build as targets named
+<code>tinyusb_host_&lt;example_name&gt;</code>,
+e.g. https://github.com/hathach/tinyusb/tree/master/examples/host/cdc_msc_hid
+is built as <code>tinyusb_host_cdc_msc_hid</code>.</p>
+<p>At the time of writing, there is only one host example available:</p>
+<ul>
+<li>tinyusb_host_cdc_msc_hid</li>
+</ul>
+<h3 id="usb-dual-mode">USB Dual Mode</h3>
+<p>USB Dual Mode uses PIO as a USB host controller and the RP2040 USB
+device controller as a device controller. All the USB dual examples come
+directly from the TinyUSB dual examples directory <a
+href="https://github.com/hathach/tinyusb/tree/master/examples/dual">here</a>.
+Those that are supported on RP2040 devices are automatically included as
+part of the pico-examples build as targets named
+<code>tinyusb_dual_&lt;example_name&gt;</code>,
+e.g. https://github.com/hathach/tinyusb/tree/master/examples/dual/host_hid_to_device_cdc
+is built as <code>tinyusb_dual_host_hid_to_device_cdc</code>.</p>
+<p>At the time of writing, there is only one dual example available:</p>
+<ul>
+<li>tinyusb_dual_host_hid_to_device_cdc</li>
+</ul>
+<h3 id="watchdog">Watchdog</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>App</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="watchdog/hello_watchdog">hello_watchdog</a></td>
+<td>Set the watchdog timer, and let it expire. Detect the reboot, and
+halt.</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
