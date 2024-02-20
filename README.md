@@ -3,17 +3,12 @@
 Basic framework for RP2040 experiments. Should include all necessary dependencies, including Pico SDK, so you don't need
 to install it manually.
 
-Individual programs must be created in 'programs' directory.
-
-TODO:
-
-- [ ] Blank program generator
-- [X] Integrate heavy compiler to automatically convert Pure Data patches as part of build
-- [ ] Set up Visual Studio Code development environment
-- [ ] Set up Emacs development environment
-- [ ] Add Ninja 'clean' support to avoid deleting '_intermediate' dir
+> This repo is published here just for reference. You need to copy Pico SDK Windows distribution
+> contents into third_party/pico-dist folder.
 
 ## Usage
+
+Individual programs must be created in 'programs' directory.
 
 ### Command line
 
